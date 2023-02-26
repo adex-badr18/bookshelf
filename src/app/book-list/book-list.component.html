@@ -1,0 +1,6 @@
+<h1>List of Books</h1>
+<!-- <ul *ngFor="let book of bookList">
+    <li>{{ book.id }}. {{ book.title }}</li>
+</ul> -->
+
+<app-book *ngFor="let book of bookList" [book]="book"></app-book>
