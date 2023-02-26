@@ -16,16 +16,24 @@ export class BookListComponent implements OnInit {
       {
         id: 1,
         title: 'Pride and Prejudice',
+        isFavorite: false
       },
       {
         id: 2,
         title: 'The Great Gatsby',
+        isFavorite: false
       },
       {
         id: 3,
         title: 'The Catcher in the Rye',
+        isFavorite: false
       }
     ]
+  }
+
+  markAsFavorite(book: Book): void {
+    // console.log(`${book.title} has been added to favorites.`);
+    book.isFavorite = true;
   }
 
 }
